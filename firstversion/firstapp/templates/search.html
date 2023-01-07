@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search results</title>
+</head>
+<body>
+
+
+<ul>
+  {% for obj in objects %}
+
+      <h1>If you would have invested 1000₹ in {{ obj.name }} at its all time high, its current value will be {{ obj.rc }}<br></h1>
+       {{ obj.name }}'s all time high price: {{ obj.hprice }}$<br>
+      Its current Price: {{ obj.currprice }}$
+      <div class="tenor-gif-embed" data-postid="7855913" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/money-wallet-broke-gif-7855913">Money Wallet GIF</a>from <a href="https://tenor.com/search/money-gifs">Money GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+  {% endfor %}
+</ul>
+
+</body>
+</html>
